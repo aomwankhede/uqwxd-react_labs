@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Qin Gang: China removes foreign minister months after appointment",
+    "description": "Qin Gang's prolonged disappearance from public view - and the silence over it - has fuelled furious speculation.",
+    "url": "http://www.bbc.co.uk/news/world-asia-china-66299379",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/83B3/production/_115651733_breaking-large-promo-nc.png",
+    "publishedAt": "2023-07-25T11:37:25.4054439Z",
+    "content": "China has removed Qin Gang as foreign minister less than seven months after he was appointed to the post.\r\nThe role will be taken up by the Communist Party's foreign affairs chief, Wang Yi, who was p… [+320 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "How desperate US prisoners try to escape deadly heat",
+    "description": "With no air con, a former prisoner describes lying in toilet water to survive brutal heat.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-66274629",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/69B4/production/_130506072_gettyimages-894670834.jpg",
+    "publishedAt": "2023-07-25T11:37:24.0932704Z",
+    "content": "As temperatures rise, prisoners locked in cells without air conditioning - and the staff guarding them - are struggling. \r\nCalvin Johnson spent 37 years in a Texas state prison, including 37 summers … [+4777 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "US Capitol rioter who beat officer with flagpole sentenced",
+    "description": "Footage shows Peter Francis Stager assaulting a fallen Capitol police officer with an American flag.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-66301561",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5FBF/production/_130511542_screenshot-90.png",
+    "publishedAt": "2023-07-25T11:37:21.6396215Z",
+    "content": "An Arkansas man who used the pole of an American flag to batter a fallen police officer during the US Capitol attack has received a 52-month jail term.\r\nPeter Francis Stager helped drag the officer d… [+2170 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Ghana minister Cecilia Abena Dapaah reported a robbery. Why was she arrested?",
+    "description": "A Ghanaian minister allegedly lost $1m cash, handbags and jewels from her house.",
+    "url": "http://www.bbc.co.uk/news/world-africa-66291294",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/A7F9/production/_130510034_mediaitem130503593.jpg",
+    "publishedAt": "2023-07-25T10:07:26.6865786Z",
+    "content": "A government minister in Ghana must have thought she was doing the right thing by going to the police to report a theft at her house, but it backfired spectacularly when she was arrested.\r\nAccording … [+4074 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Is Elon Musk wrong to ditch the Twitter bird logo?",
+    "description": "Rebrands can pay off - but it's a risky move to replace a famous icon at an organisation in turmoil.",
+    "url": "http://www.bbc.co.uk/news/business-66296468",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/6A22/production/_130507172_whatsubject.jpg",
+    "publishedAt": "2023-07-25T10:07:23.0468599Z",
+    "content": "One of the most recognisable logos on the web, the tweeting blue bird, is no more. Will the black and white X replacing it prove to be a masterstroke or a branding disaster?\r\nWhen Jean-Pierre Dube sa… [+4341 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Yemen: The children of a forgotten war",
+    "description": "A rare glimpse of a fractured conflict where the young are stalked by war and hunger.",
+    "url": "http://www.bbc.co.uk/news/world-middle-east-66258171",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/DC90/production/_130446465_super_promo_new_safe_zone-2.jpg",
+    "publishedAt": "2023-07-25T08:22:20.8425956Z",
+    "content": "If suffering had an address, it might be al-Rasheed Street, in Taiz, a Yemeni city ringed by mountains and rebel Houthi fighters. On this narrow street of rough-hewn homes, the young can't escape a g… [+14164 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Paris to bring back swimming in Seine after 100 years",
+    "description": "Banned for a century because of filthy water, bathing is to resume in parts of the river.",
+    "url": "http://www.bbc.co.uk/news/world-europe-66238618",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/861A/production/_130503343_gettyimages-1168032940.jpg",
+    "publishedAt": "2023-07-25T07:07:20.5308228Z",
+    "content": "With a year to go to the Olympics, Paris is in the final phase of a historic clean-up which will soon see swimmers and divers back in the River Seine.\r\nBanned for a century because of the filthy wate… [+5996 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Greece fires: Evacuations continue as thousands flee",
+    "description": "Greece says it has launched the biggest rescue of its kind in response to the wildfires emergency.",
+    "url": "http://www.bbc.co.uk/news/live/world-66287208",
+    "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
+    "publishedAt": "2023-07-25T06:07:26.6791428Z",
+    "content": "Celia and her two daughters Mimi, on the left, and Olivia in the middle, had set off on a week-long holidayImage caption: Celia and her two daughters Mimi, on the left, and Olivia in the middle, had … [+1108 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Obamas' chef Tafari Campbell dies in paddleboarding accident",
+    "description": "Tafari Campbell, 45, is recovered near the Massachusetts home of Barack and Michelle Obama.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-66297450",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5F32/production/_130507342_mediaitem130507341.jpg",
+    "publishedAt": "2023-07-25T00:22:18.2494206Z",
+    "content": "A personal chef to former US president Barack Obama has died during an accident on a paddle boarding trip near the Obamas' Massachusetts home. \r\nTafari Campbell, 45, worked in the White House before … [+2112 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Israel judicial reform: Water cannon used outside parliament ahead of key vote",
+    "description": "Police scuffle with protesters attempts to stop MPs voting on a bill which has caused uproar.",
+    "url": "http://www.bbc.co.uk/news/world-middle-east-66258416",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/BBAC/production/_130444084_israelwatercannonepaefe47b0815bf8bd0c0be83e47a398d124ba7f311d330_120_4692_26401000x563.jpg",
+    "publishedAt": "2023-07-24T09:22:17.964729Z",
+    "content": "Police have used water cannon and arrested protesters outside Israel's parliament ahead of a key vote on reforms which have caused uproar.\r\nThe vote brings to a head months of turmoil with some of th… [+2488 chars]"
+    }
+    ]
+    }
