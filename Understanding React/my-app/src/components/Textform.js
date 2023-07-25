@@ -7,35 +7,36 @@ export default function Textform(props) {
   const [text1, setText1] = useState("");
   const handleUpClick = (e) => {
     e.preventDefault();
-    console.log("Uppercase button was clicked");
     const capitText = text.toUpperCase();
     setText(capitText);
-    props.showAlert(" Edited to uppercase","success");
+    props.showAlert(" Edited to uppercase", "success");
   };
   const handleDownClick = (e) => {
     e.preventDefault();
-    console.log("LowerCase button was clicked");
     const lowText = text.toLowerCase();
     setText(lowText);
-    props.showAlert(" Edited to lowercase","success");
+    props.showAlert(" Edited to lowercase", "success");
+  };
+  const handleCopyClick = (e) => {
+    e.preventDefault();
+    navigator.clipboard.writeText(text);
+    props.showAlert("Copied to clipboard.","success")
   };
   const handleOnChange = (event) => {
-    console.log("Changed button was clicked");
     setText(event.target.value);
   };
   const handleOnChange1 = (event) => {
-    console.log("Changed obutton was clicked");
     setText1(event.target.value);
   };
   const handleClearClick = (e) => {
     e.preventDefault();
     setText("");
-    props.showAlert(" Cleared","success");
+    props.showAlert(" Cleared", "success");
   };
   const find = (e) => {
     e.preventDefault();
     let newText = text;
-    let newText1 = newText.replace(text1, "f");
+    let newText1 = newText.replace(text1,"");
     setText(newText1);
   };
   return (
@@ -52,24 +53,39 @@ export default function Textform(props) {
               value={text}
               onChange={handleOnChange}
               style={{
-                backgroundColor: `${props.mode === "light" ? "white" : "#090b40"}`,
+                backgroundColor: `${
+                  props.mode === "light" ? "white" : "#090b40"
+                }`,
                 color: `${props.mode === "light" ? "black" : "white"}`,
               }}
             ></textarea>
-            <button className="btn btn-primary my-3" onClick={handleUpClick}>
+            <button
+              disabled={text.length === 0}
+              className="btn btn-primary my-3"
+              onClick={handleUpClick}
+            >
               to upperCase
             </button>
             <button
+              disabled={text.length === 0}
               className="btn btn-primary my-3 mx-2"
               onClick={handleDownClick}
             >
               to lowerCase
             </button>
             <button
+              disabled={text.length === 0}
               className="btn btn-primary my-3 mx-2"
               onClick={handleClearClick}
             >
               clear
+            </button>
+            <button
+              disabled={text.length === 0}
+              className="btn btn-primary my-3 mx-2"
+              onClick={handleCopyClick}
+            >
+              copy
             </button>
             <div>
               <textarea
@@ -86,7 +102,11 @@ export default function Textform(props) {
                   color: `${props.mode === "light" ? "black" : "white"}`,
                 }}
               ></textarea>
-              <button className="btn btn-primary my-3 mx-2" onClick={find}>
+              <button
+                disabled={text.length === 0}
+                className="btn btn-primary my-3 mx-2"
+                onClick={find}
+              >
                 find
               </button>
             </div>
@@ -96,11 +116,13 @@ export default function Textform(props) {
       <div className="container my-3">
         <h1>Your text Summary</h1>
         <p>{`NoOfChars:${text.length} && NoOfWords:${
-          text.split(" ").length - 1
+          text.split(/\s+/).filter((element) => {
+            return element.length !== 0;
+          }).length
         }`}</p>
         <p>{`Time taken to read :-${0.008 * (text.split(" ").length - 1)}`}</p>
         <h2>Preview:-</h2>
-        <p>{text}</p>
+        <p>{text.length > 0 ? text : `Nothing to Preview`}</p>
       </div>
     </>
   );

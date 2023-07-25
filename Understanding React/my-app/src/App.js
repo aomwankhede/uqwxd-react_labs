@@ -4,7 +4,7 @@ import Textform from "./components/Textform";
 import About from "./components/About";
 import { useState } from "react";
 import Alert from "./components/Alert";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   const [alert, setAlert] = useState(null);
   const [mode, setMode] = useState("light");
@@ -63,6 +63,8 @@ function App() {
   );
 }
 export default App;
+
+
 //class-->className
 //for-->htmlFor
 //tabIndex

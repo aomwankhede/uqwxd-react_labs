@@ -17,7 +17,7 @@ export default function About({mode}) {
             aria-expanded="true"
             aria-controls="collapseOne"
           >
-            Accordion Item #1
+            Authors
           </button>
         </h2>
         <div
@@ -27,7 +27,7 @@ export default function About({mode}) {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is
+            <strong>Authors are under creative common license.</strong> It is
             shown by default, until the collapse plugin adds the appropriate
             classes that we use to style each element. These classes control the
             overall appearance, as well as the showing and hiding via CSS
@@ -49,7 +49,7 @@ export default function About({mode}) {
             aria-expanded="false"
             aria-controls="collapseTwo"
           >
-            Accordion Item #2
+            About Website
           </button>
         </h2>
         <div
@@ -59,14 +59,8 @@ export default function About({mode}) {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <strong>This is our new website TextUtils.Moto of learning to modify texts</strong>,
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo modi magnam labore sequi ipsum dolorem quas minus soluta. Optio, earum quis dolorem numquam delectus sequi? Atque deleniti dolorem ratione, facilis saepe id? Iste, sed!
           </div>
         </div>
       </div>
@@ -81,7 +75,7 @@ export default function About({mode}) {
             aria-expanded="false"
             aria-controls="collapseThree"
           >
-            Accordion Item #3
+            Special thank
           </button>
         </h2>
         <div
@@ -91,7 +85,7 @@ export default function About({mode}) {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
+            <strong>Special thank to my beloved mom and dad.</strong> It is
             hidden by default, until the collapse plugin adds the appropriate
             classes that we use to style each element. These classes control the
             overall appearance, as well as the showing and hiding via CSS
