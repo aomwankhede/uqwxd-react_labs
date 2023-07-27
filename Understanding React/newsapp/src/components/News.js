@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
-
+//Hey Paparazzi
 //Props cant be change d
 export class News extends Component {
   static defaultProps = {
