@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 export class Navbar extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg bg-dark">
           <div className="container-fluid text-light bg-dark">
-            <a className="navbar-brand text-light bg-dark" href="/">
+            <Link className="navbar-brand text-light bg-dark" to="/">
               WorldToday
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -26,85 +26,85 @@ export class Navbar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/about"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/Business"
                   >
                     Bussiness
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/Entertainment"
                   >
-                    entertainment
-                  </a>
+                    Entertainment
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/General"
                   >
-                    general
-                  </a>
+                    General
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/Health"
                   >
-                    health
-                  </a>
+                    Health
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/Science"
                   >
-                    science
-                  </a>
+                    Science
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/Sports"
                   >
-                    sports
-                  </a>
+                    Sports
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="nav-link active text-light bg-dark"
                     aria-current="page"
-                    href="/"
+                    to="/Technology"
                   >
-                    technology
-                  </a>
+                    Technology
+                  </Link>
                 </li>
               </ul>
             </div>

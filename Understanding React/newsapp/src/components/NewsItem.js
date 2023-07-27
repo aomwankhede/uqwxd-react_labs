@@ -2,15 +2,16 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl } = this.props;
+    let { title, description, imageUrl, newsUrl,publishedAt,author } = this.props;
     return (
       <div className="my-3">
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card">
           <img className="card-img-top" src={imageUrl} alt="Card image cap" />
           <div className="card-body">
-            <h5 className="card-body">{title}...</h5>
+            <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description}...</p>
-            <a href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
+            <p className="card-text"><small className="text-muted">{`By ${this.props.author?this.props.author:`unknown`} on ${this.props.publishedAt}`}</small></p>
+            <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
               Read more
             </a>
           </div>
