@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
+import InfiniteScroll from "react-infinite-scroll-component";
+
 //Hey Paparazzi
 //Props cant be change d
 export class News extends Component {
@@ -72,11 +74,27 @@ export class News extends Component {
     });
     this.updateNews();
   };
+  fetchMoreData=async ()=>{
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=b312a337adf142a2aa8ac9c1f422b392&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    this.setState({loading:true});
+    let data = await fetch(url); //data is promise
+    let parsedData = await data.json();
+    this.setState({
+      articles: this.state.articles.concat(parsedData.articles),
+      loading: false,
+    });
+  }
   render() {
     return (
       <div className="container my-3">
         <h1 className="text-center">{`Top ${this.capitalize(this.props.category)} Headlines`}</h1>
-        {this.state.loading ? <Spinner height="30px" width="30px" /> : ""}
+        {/* {this.state.loading ? <Spinner height="30px" width="30px" /> : ""} */}
+        <InfiniteScroll
+          dataLength={this.state.articles.length}
+          next={this.fetchMoreData}
+          hasMore={Math.ceil(this.state.totalResults) / this.props.pageSize > this.state.page}
+          loader={this.state.loading ? <Spinner height="30px" width="30px" /> : ""}
+        >
         <div className="row">
           {!this.state.loading &&
             this.state.articles.map((element) => {
@@ -107,6 +125,7 @@ export class News extends Component {
               );
             })}
         </div>
+        </InfiniteScroll>
         <div className="container d-flex justify-content-between">
           <button
             disabled={this.state.page === 1}
