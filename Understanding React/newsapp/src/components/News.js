@@ -9,7 +9,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 export class News extends Component {
   static defaultProps = {
     country: "in",
-    pageSize: 8,
+    pageSize: 9,
     category: "general",
   };
   static propTypes = {
@@ -66,18 +66,6 @@ export class News extends Component {
       loading: false,
     });
   };
-  handleNextClick = async () => {
-    this.setState({
-      page: this.state.page + 1,
-    });
-    this.updateNews();
-  };
-  handlePrevClick = async () => {
-    this.setState({
-      page: this.state.page - 1,
-    });
-    this.updateNews();
-  };
   fetchMoreData = async () => {
     setTimeout(async () => {
       let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=b312a337adf142a2aa8ac9c1f422b392&page=${this.state.page}&pageSize=${this.props.pageSize}`;
@@ -93,11 +81,12 @@ export class News extends Component {
   };
   render() {
     return (
-      <div className="container my-3">
+      <>
         <h1 className="text-center">{`Top ${this.capitalize(
           this.props.category
         )} Headlines`}</h1>
-        {/* {this.state.loading ? <Spinner height="30px" width="30px" /> : ""} */}
+        {this.state.loading ? <Spinner height="30px" width="30px" /> : ""}
+        <div>
         <InfiniteScroll
           dataLength={this.state.articles.length}
           next={this.fetchMoreData}
@@ -109,9 +98,10 @@ export class News extends Component {
             !this.state.loading ? <Spinner height="30px" width="30px" /> : ""
           }
         >
+          <div className="container">
           <div className="row">
-            {!this.state.loading &&
-              this.state.articles.map((element) => {
+            {/*Here was the problem*/}
+            {this.state.articles.map((element) => {
                 //Agr loading nahi hot aahe t dakhwa
                 return (
                   <div className="col-md-4" key={element.url}>
@@ -139,29 +129,10 @@ export class News extends Component {
                 );
               })}
           </div>
+          </div>
         </InfiniteScroll>
-        <div className="container d-flex justify-content-between">
-          <button
-            disabled={this.state.page === 1}
-            type="button"
-            className="btn btn-dark mx-4"
-            onClick={this.handlePrevClick}
-          >
-            &larr;prev
-          </button>
-          <button
-            disabled={
-              Math.ceil(this.state.totalResults) / this.props.pageSize <=
-              this.state.page
-            }
-            type="button"
-            className="btn btn-dark mx-4"
-            onClick={this.handleNextClick}
-          >
-            next &rarr;
-          </button>
         </div>
-      </div>
+      </>
     );
   }
 }
