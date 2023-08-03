@@ -25,7 +25,7 @@ export default class App extends Component {
         // onLoaderFinished={() => setProgress(0)}
       />
         <Routes>
-          <Route path="/" element={<News setProgress={this.setProgress}    key='general' pageSize={this.pageSize} country="in" category="general"/>}></Route>
+          <Route path="/" element={<News setProgress={this.setProgress}    key='General' pageSize={this.pageSize} country="in" category="general"/>}></Route>
           <Route path="/Business" element={ <News setProgress={this.setProgress}   key='business'  pageSize={this.pageSize} country="in" category="business"/>}></Route>
           <Route path="/Entertainment" element={<News setProgress={this.setProgress}   key='entertainment'  pageSize={this.pageSize} country="in" category="entertainment"/>}></Route>
           <Route path="/General" element={ <News setProgress={this.setProgress}   key='general'  pageSize={this.pageSize} country="in" category="general"/>}></Route>
